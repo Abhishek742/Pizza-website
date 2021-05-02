@@ -1,2 +1,2 @@
 # Pizza-website
-Hosted on - myownpizzeria.netlify.app
+# Hosted on - https://myownpizzeria.netlify.app
