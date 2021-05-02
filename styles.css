@@ -155,7 +155,7 @@ h1 {
 }
 /* Menu area */
 .menu {
-  height: 100vh;
+  min-height: 45rem;
   background: url(/images/pizza-3.JPG);
   background-repeat: no-repeat;
   background-size: cover;
@@ -267,7 +267,7 @@ h1 {
 /* masterclass */
 .masterclass {
   background: url(/images/pizza-4.JPG);
-  height: 100vh;
+  min-height: 27rem;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
