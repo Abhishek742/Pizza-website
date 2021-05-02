@@ -1,0 +1,523 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --yellow: #ffb803;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  z-index: 0;
+  color: #f3f3f3;
+}
+/*Utilites*/
+body {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-size: 30px;
+}
+/* Landing page */
+
+.landing-page {
+  background: url(/images/pizza-1.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/*Navbar*/
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background: transparent;
+  z-index: 10;
+  padding: 20px;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar .flex {
+  justify-content: space-between;
+}
+.navbar h1 {
+  padding: 0px 10px 0px 100px;
+  background-color: var(--yellow);
+}
+.navbar li {
+  font-size: 20px;
+  margin: 5px 10px;
+  font-weight: 500;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--yellow);
+}
+.navbar a:hover {
+  border-bottom: 2px solid #f3f3f3;
+}
+/* content */
+.yellow {
+  height: 180px;
+  width: 100vw;
+  background: var(--yellow);
+}
+.content {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.content h2 {
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 100%;
+  transform: translateY(30px);
+  margin: 0px 40px;
+  letter-spacing: 8px;
+}
+.opening {
+  font-weight: 200;
+}
+.content a {
+  text-decoration: none;
+  font-size: 25px;
+  border: 2px solid #f3f3f3;
+  border-radius: 8px;
+  background-color: #ffb903;
+  padding: 10px 30px;
+  transform: translateY(10px);
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Whats new page */
+/* black background area */
+.black {
+  background-color: #222;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 10px;
+}
+.text-area {
+  padding: 0px 20px;
+}
+.black img {
+  height: 350px;
+}
+.text-area {
+  width: 400px;
+  z-index: 20;
+}
+.text-area h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.text {
+  font-size: 17px;
+  margin: 20px 0;
+}
+/* White background area */
+.white {
+  background-color: #f3f3f3;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 300px;
+  padding: 10px;
+  margin: 30px 20px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888;
+}
+.card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: var(--yellow);
+  text-align: center;
+}
+.card p {
+  color: #222;
+  text-align: center;
+  font-size: 16px;
+}
+/* Menu area */
+.menu {
+  height: 100vh;
+  background: url(/images/pizza-3.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.menu-content {
+  flex-direction: column;
+  width: 1000px;
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+}
+.logo {
+  color: var(--yellow);
+  font-size: 30px;
+  margin-bottom: 30px;
+  justify-self: flex-start;
+}
+.our-menu {
+  color: var(--yellow);
+  font-size: 35px;
+  font-weight: 500;
+  border: 2px solid #f3f3f3;
+  padding: 5px 200px;
+  margin-bottom: 40px;
+}
+.items {
+  height: 400px;
+  width: 600px;
+  background: #ffb80383;
+  display: grid;
+  grid-template-columns: 3.5fr 0.5fr;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+}
+.item h3,
+.price h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.price h3 {
+  padding-top: 20px;
+}
+.item,
+.price {
+  margin: 10px 10px;
+}
+.item:first-child,
+.item:last-child {
+  margin-top: 20px;
+}
+.price:first-child,
+.price:last-child {
+  margin-bottom: 20px;
+}
+.item {
+  padding-left: 30px;
+}
+.item p {
+  font-size: 16px;
+  font-weight: 300;
+}
+/* About us */
+.about-us {
+  flex-direction: column;
+  justify-content: center;
+}
+.about-text {
+  max-width: 600px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-text p {
+  text-align: center;
+}
+.concept,
+.concept span {
+  color: var(--yellow);
+  font-size: 30px;
+}
+.concept {
+  font-weight: 300;
+  margin: 20px;
+}
+.concept span {
+  font-weight: 600;
+}
+.about-text p {
+  margin: 20px 0;
+}
+.policy ul {
+  margin: 20px 0;
+}
+.policy li {
+  margin: 10px 30px;
+}
+/* masterclass */
+.masterclass {
+  background: url(/images/pizza-4.JPG);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+.mc-content {
+  z-index: 20;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 30px;
+}
+.price-card,
+.btn {
+  background-color: var(--yellow);
+}
+.mc-content h2 {
+  margin: 0 0 30px 0;
+  font-size: 30px;
+}
+.price-card {
+  height: 400px;
+  margin: 20px 0 40px 10px;
+  width: 350px;
+  padding: 50px 30px;
+  position: relative;
+}
+.price-card h3 {
+  font-weight: 500;
+  font-size: 27px;
+  margin-bottom: 30px;
+}
+.price-card h4 {
+  font-size: 23px;
+  margin: 0 0 20px 0;
+  font-weight: 400;
+}
+.price-card p {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.btn {
+  margin: 15px 0;
+  padding: 15px 50px;
+}
+.btn a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* gallery section */
+.gallery {
+  /* height: 80vh; */
+  background-image: linear-gradient(
+    90deg,
+    #222 15%,
+    var(--yellow) 15%,
+    var(--yellow) 25%,
+    #222 25%
+  );
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.gallery h3 {
+  font-size: 30px;
+  color: var(--yellow);
+  margin: 50px 0 20px;
+  font-weight: 800;
+}
+.images {
+  z-index: 20;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.images img {
+  height: 400px;
+}
+/*footer  */
+footer {
+  background: #493501;
+}
+.footer {
+  justify-content: space-around;
+}
+.footer-nav a:hover {
+  border-bottom: 2px solid #f3f3f3;
+}
+.footer-nav,
+.copyrights,
+.social {
+  margin: 30px 0;
+}
+.footer-nav a,
+.social a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+.copyrights h1,
+.copyrights p,
+.social h2 {
+  color: #f3f3f3;
+}
+.copyrights h1,
+.social h2 {
+  margin-bottom: 10px;
+}
+.social a {
+  margin: 0 20px 0 0;
+}
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-content h2 {
+    font-size: 60px;
+    transform: translateY(10px);
+    margin: 0 20px;
+  }
+  .yellow {
+    height: 100px;
+  }
+  .main-content a {
+    font-size: 20px;
+    padding: 7px 16px;
+    transform: translateY(5px);
+  }
+  .white {
+    flex-direction: column;
+  }
+  .black {
+    flex-direction: column;
+  }
+  .black img {
+    height: 250px;
+  }
+
+  .text-area h3 {
+    font-size: 25px;
+  }
+  .text {
+    font-size: 17px;
+  }
+  .our-menu {
+    font-size: 25px;
+    padding: 5px 130px;
+  }
+  .items {
+    height: 400px;
+    width: 400px;
+  }
+  .item h3,
+  .price h3 {
+    font-size: 20px;
+  }
+  .item,
+  .price {
+    margin: 5px;
+  }
+  .images img {
+    height: 200px;
+  }
+  .policy li {
+    margin: 10px 20px;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer-nav,
+  .social,
+  .copyrights {
+    margin: 10px 20px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar li a {
+    font-size: 14px;
+  }
+  .navbar {
+    padding: 10px;
+  }
+  .navbar li {
+    margin: 20px 5px;
+  }
+  .main-content h2 {
+    font-size: 30px;
+    transform: translateY(30px);
+    margin: 0 10px;
+  }
+  .yellow {
+    height: 75px;
+  }
+  .main-content a {
+    font-size: 14px;
+    padding: 7px 15px;
+    transform: translateY(25px);
+  }
+  .black img {
+    height: 200px;
+  }
+  .text-area {
+    width: 300px;
+  }
+  .our-menu {
+    font-size: 20px;
+    padding: 5px 78px;
+  }
+  .items {
+    height: 400px;
+    width: 300px;
+    grid-template-columns: 3.2fr 0.8fr;
+  }
+  .item h3,
+  .price h3 {
+    font-size: 16px;
+  }
+  .item {
+    padding: 10px;
+  }
+  .item p {
+    font-size: 14px;
+  }
+  .policy li {
+    margin: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .mc-content {
+    padding-right: 0;
+  }
+  .price-card {
+    width: 275px;
+    margin: 20px 0px 20px 10px;
+  }
+  .masterclass {
+    padding: 0px 20px;
+  }
+  .concept,
+  .concept span {
+    font-size: 24px;
+  }
+}
