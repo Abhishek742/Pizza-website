@@ -26,7 +26,7 @@ h1 {
 /* Landing page */
 
 .landing-page {
-  background: url(/images/pizza-1.JPG);
+  background: url(https://ik.imagekit.io/7j0oyebzy3k/pizza-1_Zea09rD05TD.JPG?updatedAt=1632463472169);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -156,7 +156,7 @@ h1 {
 /* Menu area */
 .menu {
   min-height: 45rem;
-  background: url(/images/pizza-3.JPG);
+  background: url(https://ik.imagekit.io/7j0oyebzy3k/pizza-3_y6SyQx2BB.JPG?updatedAt=1632463831198);
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -266,7 +266,7 @@ h1 {
 }
 /* masterclass */
 .masterclass {
-  background: url(/images/pizza-4.JPG);
+  background: url(https://ik.imagekit.io/7j0oyebzy3k/pizza-4_TvhDhN8C0L.JPG?updatedAt=1632463827003);
   min-height: 27rem;
   background-repeat: no-repeat;
   background-size: cover;
